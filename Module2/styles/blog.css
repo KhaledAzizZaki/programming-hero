@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+.header {
+  height: 600px;
+  background-image: url("philipp-dusel-vNVwg35VZrg-unsplash.jpg");
+  color: #000000;
+  background-size: cover;
+  padding: 100px 0px 0px 100px;
+  /* background-size: 200px; */
+}
+h1 {
+  color: rgb(34, 0, 85);
+}
+
+#lol {
+  margin-left: 80px;
+}
+
+/* h3 {
+  font-size: 30px;
+  text-decoration: underline;
+} */
+
+/* .other { */
+/* display: none; */
+/* visibility: hidden; */
+/* } */
+
+.blog {
+  margin: 14px;
+  padding: 20px;
+  outline: 5px solid black;
+  border-radius: 10px;
+  /* border: 10px solid rebeccapurple; */
+  box-shadow: 10px 10px 20px rgb(86, 161, 202);
+  /* display: inline-block; */
+}
+p {
+  text-align: justify;
+}
+
+/* .incident {
+  border: 5px solid yellowgreen;
+  /* display: block; */
+/* height: 500px; */
+/* margin: 20px;} */
+
+/* .fi {   [not working]
+  display: inline-block;
+} */
+div {
+  display: inline-block;
+  background-color: aquamarine;
+  width: 27%;
+}
