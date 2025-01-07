@@ -108,7 +108,7 @@ h1 {
 .card .card-img {
   width: 424px;
 }
-img {
+.card-img > img {
   width: 100%;
 }
 .shop {
@@ -163,4 +163,78 @@ img {
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 48px;
+}
+/* .sfooter {
+  background: c;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+} */
+/* .icon {
+  background-size: 30px;
+} */
+.icon .iconi {
+  width: 30px;
+  margin: 16px;
+}
+.about {
+  display: flex;
+  width: 1920px;
+}
+.about-img {
+  width: 960px;
+  height: 671px;
+}
+.aboutm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 960px;
+  padding: 60px;
+}
+/* .about-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1920px;
+    padding: 60px;
+  } */
+.abouth {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 24px;
+}
+.aboutp {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.6;
+  margin: 48px;
+}
+.aboutf {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  margin: 32px;
+  padding: 30px 200px;
 }
