@@ -181,18 +181,20 @@ h1 {
 }
 .about {
   display: flex;
-  width: 1920px;
+  /* width: 1920px; */
+  align-items: center;
+  justify-content: center;
 }
-.about-img {
-  width: 960px;
-  height: 671px;
+.about-pic {
+  width: 50%;
+  /* height: 671px; */
 }
-.aboutm {
+.about-dis {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 960px;
+  width: 50%;
   padding: 60px;
 }
 /* .about-footer {
@@ -237,4 +239,16 @@ h1 {
   border-bottom: 1px solid rgba(16, 16, 16, 0.2);
   margin: 32px;
   padding: 30px 200px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  margin-top: 100px;
 }
