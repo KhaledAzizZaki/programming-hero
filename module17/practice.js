@@ -23,3 +23,18 @@ let totalMarks = mathematics + biology + chemistry + physics + bangla;
 
 let averageNumber = totalMarks / 5;
 console.log("Average Number", averageNumber.toFixed(2));
+
+/*****practice task3******/
+
+let num1 = 119;
+let num2 = 5;
+
+let remainder = num1 % num2;
+console.log("Remainder :", remainder);
+
+/*****practice task4******/
+const a = isNaN("11");
+console.log(a);
+
+const b = isNaN(2 - 11);
+console.log(b);
