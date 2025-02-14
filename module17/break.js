@@ -31,12 +31,16 @@ Write a while loop that adds numbers starting from 1, but stops (using break) as
 Write a loop that goes from 1 to 100, but stops (using break) when it encounters the first square number (like 4, 9, 16, etc.)
 */
 // not solved
-let i = 0;
 
-while (i <= 100) {
-  console.log(i);
-  if (i == 4) {
-    break;
+for (let i = 2; i <= 100; i++) {
+  if (Number.isInteger(Math.sqrt(i))) {
+    console.log(i);
   }
-  i++;
 }
+
+// for (let i = 2; i <= 100; i++) {
+//   let num = i ** 0.5;
+//   if (Number.isInteger(num)) {
+//     console.log(i);
+//   }
+// }
