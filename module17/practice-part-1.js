@@ -96,5 +96,9 @@ word(str);
 // Task-5:
 // Generate a random number between 10 to 20.
 
-num = Math.round(Math.random() * 10 + 10);
-console.log(num);
+// num = Math.round(Math.random() * 10 + 10);
+// console.log(num);
+
+let today = new Date();
+console.log(today);
+console.log(new Date());
