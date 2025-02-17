@@ -24,14 +24,36 @@
  **********Send Notification***********
  */
 
-function sendNotification(a) {
-  if (typeof a !== "string" || a == false || !a.includes("@")) {
+// function sendNotification(a) {
+//   if (typeof a !== "string" || a == false || !a.includes("@")) {
+//     return "Invalid Input";
+//   }
+//   let str = a.split("@");
+//   let notification = `${str[0]} send You an email from ${str[1]}`;
+//   return notification;
+// }
+
+// let result1 = sendNotification("khaledazizzaki@gmail.com");
+// console.log(result1);
+
+/*
+ *************Check Digits In Name*************
+ */
+function checkDigitsInName(str) {
+  if (typeof str !== "string" || str == false /* || str.includes(" ") */) {
     return "Invalid Input";
   }
-  let str = a.split("@");
-  let notification = `${str[0]} send You an email from ${str[1]}`;
-  return notification;
+  let name = false;
+  for (let i of str) {
+    if (i == " ") {
+      name = false;
+      break;
+    } else if (!isNaN(i)) {
+      name = true;
+    }
+  }
+  return name;
 }
 
-let result1 = sendNotification("khaledazizzaki@gmail.com");
-console.log(result1);
+let result2 = checkDigitsInName("Khaled456");
+console.log(result2);
