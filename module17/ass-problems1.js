@@ -86,3 +86,35 @@ function validProposal(person1, person2) {
     return true;
   } else return false;
 }
+
+//Problem-05
+function calculateSleepTime(times) {
+  if (!Array.isArray(times)) {
+    return "Invalid";
+  }
+  for (let i of times) {
+    if (typeof i !== "number") {
+      return "Invalid";
+    }
+  }
+
+  let totalTimes = { hour: 0, minute: 0, second: 0 };
+
+  let sum = 0;
+  for (let i of times) {
+    sum += i;
+  }
+
+  let second = sum % 60;
+  totalTimes.second = second;
+
+  let minute = (sum - second) / 60;
+  let minuteRemain = minute % 60;
+  totalTimes.minute = minuteRemain;
+
+  let hour = minute - minuteRemain;
+  let hourRemain = hour / 60;
+  totalTimes.hour = hourRemain;
+
+  return totalTimes;
+}
