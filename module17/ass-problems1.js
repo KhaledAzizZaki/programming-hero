@@ -65,3 +65,24 @@ function willSuccess(marks) {
     return false;
   }
 }
+
+// Problem-04
+function validProposal(person1, person2) {
+  if (Array.isArray(person1) || Array.isArray(person2)) {
+    return "Invalid";
+  }
+
+  if (typeof person1 !== "object" || typeof person2 !== "object") {
+    return "Invalid";
+  }
+
+  if (person1.gender.toLowerCase() == person2.gender.toLowerCase()) {
+    return false;
+  }
+
+  let ageDif = person1.age - person2.age;
+  let num = Math.abs(ageDif);
+  if (num <= 7) {
+    return true;
+  } else return false;
+}
