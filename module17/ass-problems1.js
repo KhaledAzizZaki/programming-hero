@@ -118,3 +118,6 @@ function calculateSleepTime(times) {
 
   return totalTimes;
 }
+
+let result5 = calculateSleepTime([5600]);
+console.log(result5);
