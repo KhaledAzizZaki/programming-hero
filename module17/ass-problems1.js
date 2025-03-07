@@ -40,6 +40,7 @@ function validContact(contact) {
 
 // Problem-03
 function willSuccess(marks) {
+  console.log(Array.isArray(marks));
   if (!Array.isArray(marks) || marks == false) {
     return "Invalid";
   }
@@ -65,6 +66,8 @@ function willSuccess(marks) {
     return false;
   }
 }
+let result3 = willSuccess([]);
+console.log(result3);
 
 // Problem-04
 function validProposal(person1, person2) {

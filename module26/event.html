@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .comm {
+        border: 2px solid blue;
+        background-color: aqua;
+        padding: 15px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Event handler</h1>
+    <button id="btn-update">Update title</button>
+    <br />
+    <br />
+    <br />
+    <p id="name-id">No Name</p>
+    <input type="text" placeholder="Your Name" id="input-name" />
+    <button id="btn-update2">Update</button>
+    <br />
+    <br />
+    <br />
+    <section id="comment-sec">
+      <h1>Here is your comment</h1>
+      <p class="comm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil
+        voluptatum aliquid? Vitae, doloremque quisquam possimus eum perspiciatis
+        porro ducimus earum pariatur laboriosam, repellendus aspernatur
+      </p>
+      <p class="comm">
+        praesentium laboriosam in itaque mollitia voluptatibus? Vero fuga saepe
+        consequuntur voluptas maiores dolores ratione nisi officia dignissimos,
+        voluptatum quibusdam quam nemo cupiditate reiciendis voluptatem vel cum
+        error dolore consequatur commodi veritatis?
+      </p>
+      <p class="comm">
+        reprehenderit alias dignissimos expedita molestiae optio praesentium
+        laboriosam in itaque mollitia voluptatibus? Vero fuga saepe consequuntur
+        voluptas maiores dolores ratione nisi officia dignissimos, voluptatum
+        quibusdam quam nemo cupiditate reiciendis voluptatem vel cum error
+        dolore consequatur commodi veritatis?
+      </p>
+    </section>
+    <textarea name="" id="input-text" cols="50" rows="10"></textarea>
+    <br />
+    <button id="btn-submit">Submit</button>
+    <script>
+      document
+        .getElementById("btn-submit")
+        .addEventListener("click", function () {
+          let inputText = document.getElementById("input-text");
+          let input = inputText.value;
+
+          //
+          let para = document.createElement("p");
+          para.classList.add("comm");
+          para.innerText = input;
+
+          //
+          const commentSec = document.getElementById("comment-sec");
+          commentSec.appendChild(para);
+          //
+          inputText.value = "";
+        });
+    </script>
+    <script src="event.js"></script>
+  </body>
+</html>
