@@ -38,20 +38,41 @@
 //   console.log(users[0].name);
 // };
 
-const lodeData = () => {
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((res) => res.json())
-    .then((data) => {
-      displayUser(data);
-    });
+// const lodeData = () => {
+//   fetch("https://jsonplaceholder.typicode.com/users")
+//     .then((res) => res.json())
+//     .then((data) => {
+//       displayUser(data);
+//     });
+// };
+
+// const displayUser = (data) => {
+//   const usersContainer = document.getElementById("users");
+
+//   for (let i of data) {
+//     const li = document.createElement("li");
+//     li.innerText = i.name;
+//     usersContainer.appendChild(li);
+//   }
+// };
+
+const lodeData = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await res.json();
+  displayUser(data);
 };
 
-const displayUser = (data) => {
-  const usersContainer = document.getElementById("users");
-
-  for (let i of data) {
-    const li = document.createElement("li");
-    li.innerText = i.name;
-    usersContainer.appendChild(li);
+const displayUser = (post) => {
+  const postContainer = document.getElementById("postContainer");
+  //
+  for (let i of post) {
+    const div = document.createElement("div");
+    div.classList.add("card");
+    div.innerHTML = `
+      <h1>${i.title}</h1>
+      <p>${i.body}</p>
+      <button>Details</button>
+    `;
+    postContainer.appendChild(div);
   }
 };
