@@ -9,9 +9,11 @@ export default function Counter() {
   };
 
   return (
-    <div className="border">
+    <div className="bor-der">
       <h3>Count: {count}</h3>
-      <button onClick={addBtn}>Add</button>
+      <button onClick={addBtn} className="text-green-500 bor-der">
+        Add
+      </button>
     </div>
   );
 }

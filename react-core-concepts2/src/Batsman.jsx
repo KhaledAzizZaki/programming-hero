@@ -25,20 +25,20 @@ export default function Batsman() {
   };
 
   return (
-    <div className="border">
+    <div className="bor-der">
       <h3>Player: Samin</h3>
       <p>Score: {runs}</p>
       <p>Total Six: {sixes}</p>
-      <button onClick={one} className="border">
+      <button onClick={one} className="bor-der">
         1
       </button>
-      <button onClick={four} className="border">
+      <button onClick={four} className="bor-der">
         4
       </button>
-      <button onClick={six} className="border">
+      <button onClick={six} className="bor-der">
         6
       </button>
-      <button onClick={minTan} className="border">
+      <button onClick={minTan} className="bor-der text-red-400">
         - 10
       </button>
     </div>
